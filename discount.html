@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FLATICON ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css"
+    />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+
+    <title>Ecommerce Website</title>
+  </head>
+  <body>
+  
+    <style>
+
+      .add-discount-btn .button i {
+          font-size: 14px; /* Kích thước biểu tượng */
+          margin-right: 5px; /* Khoảng cách giữa biểu tượng và văn bản */
+      }
+
+      .add-discount-btn .button {
+          font-size: 16px; /* Kích thước chữ */
+          background-color: var(--first-color); /* Màu nền */
+          color: white; /* Màu chữ */
+          padding: 10px 20px; /* Khoảng cách bên trong */
+          border-radius: 4px; /* Bo tròn góc */
+          text-decoration: none; /* Bỏ gạch chân */
+          display: inline-block; /* Để nút nằm trên cùng một dòng */
+      }
+  
+      .add-discount-btn .button:hover {
+          background-color: #054c2a; /* Màu nền khi di chuột qua */
+      }
+
+    .discount-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+}
+
+    .discount-table th, .discount-table td {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: center;
+}
+
+    .discount-table th {
+        background-color: #f9f9f9;
+}
+    .discount-button {
+    background-color: var(--first-color); /* Màu nền */
+    color: white; /* Màu chữ */
+    padding: 5px 20px; /* Khoảng cách bên trong */
+    border-radius: 4px; /* Bo tròn góc */
+    text-decoration: none; /* Bỏ gạch chân */
+    display: inline-block; /* Để nút nằm trên cùng một dòng */
+}
+
+    .discount-button:hover {
+    background-color: #054c2a; /* Màu nền khi di chuột qua */
+}
+    .total-promo {
+      margin-top: 10px; /* Khoảng cách với nút thêm mã khuyến mãi */
+      font-size: 16px; /* Kích thước chữ */
+      color: #333; /* Màu chữ */
+}
+  </style>
+  
+    
+    <!--=============== HEADER ===============-->
+    <nav class="nav container">
+      <a href="index-manage.html" class="nav__logo">
+        <img
+          class="nav__logo-img"
+          src="assets/img/logo.png"
+          alt="website logo"
+        />
+      </a>
+      <div class="nav__menu" id="nav-menu">
+        <div class="nav__menu-top">
+          <a href="index-manage.html" class="nav__menu-logo">
+            <img src="./assets/img/logo.png" alt="">
+          </a>
+          <div class="nav__close" id="nav-close">
+            <i class="fi fi-rs-cross-small"></i>
+          </div>
+        </div>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="productManage.html" class="nav__link">Quản lý Sản phẩm</a>
+          </li>
+          <li class="nav__item">
+            <a href="quanlydonhang.html" class="nav__link">Quản lý Đơn hàng</a>
+          </li>
+          <li class="nav__item">
+            <a href="discount.html" class="nav__link active-link">Khuyến mãi</a>
+          </li>
+          <li class="nav__item">
+            <a href="accounts-manager.html" class="nav__link">Thông tin</a>
+          </li>
+        </ul>
+    </nav>
+  </header>
+    <!--=============== MAIN ===============-->
+    <main class="main">
+      <!--=============== BREADCRUMB ===============-->
+
+      <!--=============== Promotion Management ===============-->
+      <section class="products container section--lg">
+        <div class="add-discount-btn">
+          <a href="add-Discount.html" class="button">
+              <i class="fi fi-rs-plus"></i> Thêm 1 mã khuyến mãi mới
+          </a>
+          <br>
+      </div>
+      <div class="total-promo">
+        <span id="promo-count">1</span> mã khuyến mãi
+        <span id="no-promo-message" style="display: none;">0 mã giảm giá</span>
+    </div>
+    
+    
+    
+    
+    
+    <table class="discount-table">
+          <thead>
+            <tr>
+              <th>Tên mã</th>
+              <th>Mã code</th>
+              <th>Số lượng</th>
+              <th>Giảm bao nhiêu</th>
+              <th>Khoảng thời gian áp dụng</th>
+              <th>Thao tác</th>
+            </tr>
+          </thead>
+          <tbody id="promo-table-body">
+            <tr>
+                <td>Big deal 10/10</td>
+                <td>BD1010</td>
+                <td>50</td>
+                <td>20%</td>
+                <td>01/10/2024 - 10/10/2024</td>
+                <td>
+                    <button class="discount-button" onclick="EditPromo()">Chỉnh sửa</button>
+                    <button class="discount-button" onclick="deletePromo(this)">Xóa</button>
+                </td>
+            </tr>
+            <!-- Thêm các hàng khác ở đây -->
+        </tbody>
+        </table>
+      </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer container">
+      <div class="footer__container grid">
+        <div class="footer__content">
+          <a href="index.html" class="footer__logo">
+            <img src="./assets/img/logo.png" alt="" class="footer__logo-img" />
+          </a>
+          <h4 class="footer__subtitle">Thông tin liên hệ</h4>
+          <p class="footer__description">
+            <span>Địa chỉ:</span> Công ty CP-TM-DV Xe Gắn Máy, 100 phường Đông Hòa, TP. Dĩ An, tỉnh Bình Dương, Việt Nam.
+          </p>
+          <p class="footer__description">
+            <span>Hotline:</span> +84 001 929 992
+          </p>
+          <p class="footer__description">
+            <span>Email:</span> contact@motorcycle.vn
+          </p>
+          <div class="footer__social">
+            <h4 class="footer__subtitle">MotorCycle đã có mặt trên:</h4>
+            <div class="footer__links flex">
+              <a href="#">
+                <img
+                  src="./assets/img/icon-facebook.svg"
+                  alt=""
+                  class="footer__social-icon"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="./assets/img/icon-twitter.svg"
+                  alt=""
+                  class="footer__social-icon"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="./assets/img/icon-instagram.svg"
+                  alt=""
+                  class="footer__social-icon"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="./assets/img/icon-pinterest.svg"
+                  alt=""
+                  class="footer__social-icon"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="./assets/img/icon-youtube.svg"
+                  alt=""
+                  class="footer__social-icon"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__content">
+          <h3 class="footer__title">Thông tin chi tiết</h3>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">Về chúng tôi</a></li>
+            <li><a href="#" class="footer__link">Chính sách giao hàng</a></li>
+            <li><a href="#" class="footer__link">Điều khoản bảo mật</a></li>
+            <li><a href="#" class="footer__link">Quy định cung cấp dịch vụ</a></li>
+          </ul>
+        </div>
+        <div class="footer__content">
+          <h3 class="footer__title">Tải khoản của tôi</h3>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">Đăng nhập</a></li>
+            <li><a href="#" class="footer__link">Xem giỏ hàng</a></li>
+            <li><a href="#" class="footer__link">Danh sách sản phẩm yêu thích</a></li>
+            <li><a href="#" class="footer__link">Tra cứu đơn hàng</a></li>
+          </ul>
+        </div>
+        <div class="footer__content">
+          <h3 class="footer__title">Đối tác thanh toán</h3>
+          <img
+            src="./assets/img/payment-method.png"
+            alt=""
+            class="payment__img"
+          />
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="copyright">&copy; 2024. All right reserved</p>
+        <span class="designer">Website created by Group 4</span>
+      </div>
+    </footer>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
