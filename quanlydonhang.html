@@ -10,12 +10,12 @@
 
     <title>Ecommerce Website</title>
     <style>
-        .add-product-btn {
+        .add-order-btn {
             display: flex;
             justify-content: flex-start;
             margin-bottom: 20px;
         }
-        .add-product-btn .button {
+        .add-order-btn .button {
             background-color: var(--first-color);
             color: white;
             font-size: 16px;
@@ -25,28 +25,28 @@
             display: inline-block;
         }
 
-        .add-product-btn .button:hover {
+        .add-order-btn .button:hover {
             background-color: #054c2a;
         }
 
-        .product-table {
+        .order-table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
         }
 
-        .product-table th, .product-table td {
+        .order-table th, .order-table td {
             border: 1px solid #ccc;
             padding: 10px;
             text-align: center;
         }
 
-        .product-table th {
+        .order-table th {
             background-color: #e0e0e0;
             font-weight: bold;
         }
 
-        .product-button {
+        .order-button {
             color: white;
             background-color: var(--first-color);
             padding: 5px 10px;
@@ -56,7 +56,7 @@
             margin: 0 5px;
         }
 
-        .product-button:hover {
+        .order-button:hover {
             background-color: #054c2a;
         }
 
@@ -94,7 +94,7 @@
         
         
        /* Modal styles */
-       #productForm {
+       #orderForm {
         width: 100%; /* Chiếm toàn bộ chiều rộng */
         max-width: 600px; /* Giới hạn chiều rộng tối đa */
         padding: 20px; /* Khoảng cách bên trong */
@@ -130,20 +130,20 @@
 
 
         
-        #productForm h2 {
+        #orderForm h2 {
             margin-top: 0;
         }
         
-        #productForm label {
+        #orderForm label {
             display: block;
             margin-bottom: 10px;
         }
         
-        #productForm input[type="text"],
-        #productForm input[type="number"],
-        #productForm input[type="file"],
-        #productForm textarea,
-        #productForm select {
+        #orderForm input[type="text"],
+        #orderForm input[type="number"],
+        #orderForm input[type="file"],
+        #orderForm textarea,
+        #orderForm select {
             width: 100%;
             padding: 6px;
             border: 1px solid #ccc;
@@ -152,37 +152,37 @@
             box-sizing: border-box; /* Bao gồm padding và border trong kích thước */
         }
         
-        #product-info {
+        #order-info {
             height: 100px; /* Chiều cao cố định cho textarea */
             resize: none; /* Ngăn người dùng thay đổi kích thước */
         }
-        #product-note {
+        #order-note {
             height: 100px; /* Chiều cao cố định cho textarea */
             resize: none; /* Ngăn người dùng thay đổi kích thước */
         }
         
-        #product-prices {
+        #order-prices {
             display: flex;
             justify-content: space-between;
             margin-bottom: 15px;
         }
         
-        #product-prices div {
+        #order-prices div {
             flex: 1; /* Chiếm đều không gian */
             margin-right: 10px; /* Khoảng cách giữa các cột */
         }
         
-        #product-prices div:last-child {
+        #order-prices div:last-child {
             margin-right: 0; /* Không có margin cho cột cuối cùng */
         }
         
-        #product-dates {
+        #order-dates {
             display: flex;
             gap: 45px;
             margin-bottom: 15px;
         }
         
-        #product-dates input[type="date"] {
+        #order-dates input[type="date"] {
             width: 100%; /* Chiếm toàn bộ chiều rộng của ô chứa */
             padding: 6px;
             border: 1px solid #ccc;
@@ -190,7 +190,7 @@
             margin: 0; /* Không có margin */
         }
         
-        #productForm button[type="submit"] {
+        #orderForm button[type="submit"] {
             background-color: var(--first-color);
             color: white;
             padding: 10px 15px;
@@ -199,7 +199,7 @@
             cursor: pointer;
         }
         
-        #productForm button[type="submit"]:hover {
+        #orderForm button[type="submit"]:hover {
             background-color: #054c2a;
         }
 
@@ -265,10 +265,6 @@
     cursor: pointer; /* Con trỏ chuột khi di chuột qua */
 }
 
-
-
-
-
     </style>
 </head>
 <body>
@@ -287,16 +283,15 @@
                 </div>
             </div>
             <ul class="nav__list">
-                <li class="nav__item"><a href="productManage.html" class="nav__link">Quản lý Sản phẩm</a></li>
+                <li class="nav__item"><a href="orderManage.html" class="nav__link">Quản lý Đơn hàng</a></li>
                 <li class="nav__item"><a href="quanlydonhang.html" class="nav__link">Quản lý Đơn hàng</a></li>
                 <li class="nav__item"><a href="discount.html" class="nav__link active-link">Quản lý khuyến mãi</a></li>
-                <li class="nav__item"><a href="accounts-manager.html" class="nav__link">Thông tin</a></li>
             </ul>
         </div>
     </nav>
 
     <main class="main">
-        <section class="products container section--lg">
+        <section class="orders container section--lg">
             <div class="search-container">
                 <input type="text" id="search-input" placeholder="Tìm kiếm...">
                 <input type="text" id="filter-input" placeholder="Lọc..."> <!-- Ô lọc -->
@@ -306,11 +301,11 @@
             
             <br>
             
-          <div class="add-product-btn">
+          <div class="add-order-btn">
             <a href="add-Product.html" class="button"><i class="fi fi-rs-plus"></i> Thêm 1 sản phẩm mới</a>
         </div>
 
-            <table class="product-table">
+            <table class="order-table">
                 <thead>
                     <tr>
                       <th>Ảnh</th>
@@ -323,7 +318,7 @@
                       <th>Thao tác</th>
                     </tr>
                 </thead>
-                <tbody id="product-table-body">
+                <tbody id="order-table-body">
                     <!-- Sẽ được điền bằng JavaScript -->
                 </tbody>
             </table>
@@ -332,68 +327,68 @@
             </ul>
         </section>
         <div id="overlay" class="overlay"></div>
-    <div id="productForm" class="modal">
+    <div id="orderForm" class="modal">
       <h2 style="text-align: center;">Chỉnh sửa thông tin sản phẩm</h2>
       <br>
-      <form id="save-product">
-          <label for="product-id">Mã sản phẩm:</label>
-          <input type="text" id="product-id" required />
+      <form id="save-order">
+          <label for="order-id">Mã sản phẩm:</label>
+          <input type="text" id="order-id" required />
 
-          <label for="product-name">Tên sản phẩm:</label>
-          <input type="text" id="product-name" required />
+          <label for="order-name">Tên sản phẩm:</label>
+          <input type="text" id="order-name" required />
 
-          <label for="product-supplier">Nhà cung cấp:</label>
-          <input type="text" id="product-supplier" required />
+          <label for="order-supplier">Nhà cung cấp:</label>
+          <input type="text" id="order-supplier" required />
     
-           <label for="product-des">Mô tả:</label>
-            <textarea id="product-info" required></textarea>
+           <label for="order-des">Mô tả:</label>
+            <textarea id="order-info" required></textarea>
 
-          <label for="product-function">Công dụng:</label>
-          <input type="text" id="product-function" required />
+          <label for="order-function">Công dụng:</label>
+          <input type="text" id="order-function" required />
     
-          <label for="product-quantity">Tồn kho:</label>
-          <input type="number" id="product-quantity" required />
+          <label for="order-quantity">Tồn kho:</label>
+          <input type="number" id="order-quantity" required />
           
-          <label for="product-unit">Đơn vị tính:</label>
-          <input type="text" id="product-unit" required />
+          <label for="order-unit">Đơn vị tính:</label>
+          <input type="text" id="order-unit" required />
     
-          <div id="product-prices">
+          <div id="order-prices">
               <div>
-                  <label for="product-original-price">Giá gốc:</label>
-                  <input type="number" id="product-original-price" required />
+                  <label for="order-original-price">Giá gốc:</label>
+                  <input type="number" id="order-original-price" required />
               </div>
               <div>
-                  <label for="product-price">Giá bán:</label>
-                  <input type="number" id="product-price" required />
+                  <label for="order-price">Giá bán:</label>
+                  <input type="number" id="order-price" required />
               </div>
           </div>
 
-          <div id="product-dates">
+          <div id="order-dates">
               <div>
-                  <label for="product-discount-price">Giá khuyến mãi:</label>
-                  <input type="number" id="product-discount-price" required />
+                  <label for="order-discount-price">Giá khuyến mãi:</label>
+                  <input type="number" id="order-discount-price" required />
               </div>
               <div>
-                  <label for="product-start-date">Ngày bắt đầu:</label>
-                  <input type="date" id="product-start-date" required />
+                  <label for="order-start-date">Ngày bắt đầu:</label>
+                  <input type="date" id="order-start-date" required />
               </div>
               <div>
-                  <label for="product-end-date">Ngày kết thúc:</label>
-                  <input type="date" id="product-end-date" required />
+                  <label for="order-end-date">Ngày kết thúc:</label>
+                  <input type="date" id="order-end-date" required />
               </div>
           </div>
           
-          <label for="product-image">Ảnh sản phẩm (tối đa 2):</label>
+          <label for="order-image">Ảnh sản phẩm (tối đa 2):</label>
             <div id="image-upload-container" style="border: 1px solid #ccc; padding: 10px; border-radius: 8px; display: flex; align-items: center; gap: 10px;">
-                <input type="file" id="product-image" accept="image/*" multiple required style="display: none;" />
-                <label for="product-image" style="cursor: pointer; padding: 10px; background-color: #f0f0f0; border-radius: 8px;">
+                <input type="file" id="order-image" accept="image/*" multiple required style="display: none;" />
+                <label for="order-image" style="cursor: pointer; padding: 10px; background-color: #f0f0f0; border-radius: 8px;">
                     Chọn ảnh
                 </label>
                 <div id="image-preview" style="display: flex; flex-wrap: nowrap; gap: 10px;"></div> <!-- Preview container for images -->
             </div>
 
-          <label for="product-note">Ghi chú:</label>
-          <textarea id="product-note" required></textarea>
+          <label for="order-note">Ghi chú:</label>
+          <textarea id="order-note" required></textarea>
 
           <button type="submit">Lưu</button>
       </form>
@@ -402,7 +397,7 @@
 
 
 <script>
-const fileInput = document.getElementById('product-image');
+const fileInput = document.getElementById('order-image');
 const imagePreview = document.getElementById('image-preview');
 
 // Array to keep track of selected image files
@@ -452,7 +447,7 @@ fileInput.addEventListener('change', function() {
             });
 
             // Cập nhật hình ảnh sản phẩm
-            const currentProductId = document.getElementById('product-id').value; // Lấy ID sản phẩm hiện tại
+            const currentProductId = document.getElementById('order-id').value; // Lấy ID sản phẩm hiện tại
             updateProductImage(currentProductId, e.target.result); // Cập nhật hình ảnh mới
 
             deleteIcon.addEventListener('click', () => {
@@ -523,7 +518,7 @@ selectedFiles.forEach((file, index) => {
 </script>
 <script>
     function validateForm() {
-        const fileInput = document.getElementById('product-image');
+        const fileInput = document.getElementById('order-image');
         if (fileInput.files.length > 2) {
             alert('Bạn chỉ được chọn tối đa 2 hình ảnh.');
             return false;
@@ -632,65 +627,65 @@ selectedFiles.forEach((file, index) => {
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script>
-      const products = [];
+      const orders = [];
   
-      // Create sample product data
+      // Create sample order data
       for (let i = 1; i <= 100; i++) {
-          products.push({
+          orders.push({
               id: `SP${100 + i}`,
-              name: `Sản phẩm ${i}`,
-              originalPrice: `$${(Math.random() * 1000).toFixed(2)}`,
-              salePrice: `$${(Math.random() * 500).toFixed(2)}`,
+              name: `Đơn hàng ${i}`,
+              total: `$${(Math.random() * 1000).toFixed(2)}`,
+              status: `$${(Math.random() * 500).toFixed(2)}`,
               stock: Math.floor(Math.random() * 100) + 1,
-              image: `assets/img/product-${i}-1.jpg`,
+              image: `assets/img/order-${i}-1.jpg`,
               notes: `Note ${i}`
           });
       }
   
-      console.log("Products array:", products); // Check if the products array has been populated
+      console.log("Products array:", orders); // Check if the orders array has been populated
   
       const itemsPerPage = 20;
       let currentPage = 1;
   
-      // Render products for the current page
+      // Render orders for the current page
       function renderProducts(page) {
           const startIndex = (page - 1) * itemsPerPage;
           const endIndex = startIndex + itemsPerPage;
-          const productTableBody = document.getElementById('product-table-body');
+          const orderTableBody = document.getElementById('order-table-body');
   
-          if (!productTableBody) {
-              console.error("Element with ID 'product-table-body' not found");
+          if (!orderTableBody) {
+              console.error("Element with ID 'order-table-body' not found");
               return;
           }
   
-          productTableBody.innerHTML = '';
+          orderTableBody.innerHTML = '';
   
-          const currentProducts = products.slice(startIndex, endIndex);
-          currentProducts.forEach(product => {
-              productTableBody.innerHTML += createProductRow(product);
+          const currentProducts = orders.slice(startIndex, endIndex);
+          currentProducts.forEach(order => {
+              orderTableBody.innerHTML += createProductRow(order);
           });
   
           renderPagination();
       }
   
-      // Create a row for the product table
-      function createProductRow(product) {
+      // Create a row for the order table
+      function createProductRow(order) {
           return `
               <tr>
-                  <td><img src="${product.image}" alt="${product.name}" style="width: 100px; height: auto;" /></td>
-                  <td>${product.id}</td>
-                  <td>${product.name}</td>
-                  <td>${product.originalPrice}</td>
-                  <td>${product.salePrice}</td>
-                  <td>${product.stock}</td>
-                  <td>${product.notes}</td>
+                  <td><img src="${order.image}" alt="${order.name}" style="width: 100px; height: auto;" /></td>
+                  <td>${order.id}</td>
+                  <td>${order.name}</td>
+                  <td>${order.total}</td>
+                  <td>${order.status}</td>
+                  <td>${order.stock}</td>
+                  <td>${order.notes}</td>
                   <td>
-                      <button class="product-button" onclick="editProduct('${product.id}', event)">
+                      <button class="order-button" onclick="editProduct('${order.id}', event)">
         <i class="fi fi-rs-edit"></i>
-                      <button class="product-button" onclick="deleteProduct('${product.id}')">
+                      <button class="order-button" onclick="deleteProduct('${order.id}')">
                           <i class="fi fi-rs-trash"></i>
                       </button>
-                      <button class="product-button" onclick="goToDetail('${product.id}')">
+                      <button class="order-button" onclick="goToDetail('${order.id}')">
                           <i class="fi fi-rs-menu-dots"></i>
                       </button>
                   </td>
@@ -703,7 +698,7 @@ selectedFiles.forEach((file, index) => {
           const pagination = document.getElementById('pagination');
           pagination.innerHTML = '';
   
-          const totalPages = Math.ceil(products.length / itemsPerPage);
+          const totalPages = Math.ceil(orders.length / itemsPerPage);
           for (let i = 1; i <= totalPages; i++) {
               const pageItem = document.createElement('li');
               pageItem.innerHTML = `<a href="#" class="pagination__link ${currentPage === i ? 'active' : ''}" onclick="goToPage(${i})">${i}</a>`;
@@ -717,36 +712,36 @@ selectedFiles.forEach((file, index) => {
           renderProducts(currentPage);
       }
   
-      // Redirect to product detail page
-      function goToDetail(productId) {
-          window.location.href = `details.html?id=${productId}`;
+      // Redirect to order detail page
+      function goToDetail(orderId) {
+          window.location.href = `details.html?id=${orderId}`;
       }
   
-      // Delete a product
-      function deleteProduct(productId) {
-          const productIndex = products.findIndex(product => product.id === productId);
-          if (productIndex > -1) {
-              products.splice(productIndex, 1);
+      // Delete a order
+      function deleteProduct(orderId) {
+          const orderIndex = orders.findIndex(order => order.id === orderId);
+          if (orderIndex > -1) {
+              orders.splice(orderIndex, 1);
               renderProducts(currentPage);
           }
       }
   
 
-function editProduct(productId, event) {
+function editProduct(orderId, event) {
     event.preventDefault(); // Prevent default link behavior
-    const productData = products.find(product => product.id === productId);
-    if (!productData) {
+    const orderData = orders.find(order => order.id === orderId);
+    if (!orderData) {
         alert('Product not found');
         return;
     }
 
     // Populate the form fields
-    document.getElementById('product-id').value = productData.id;
-    document.getElementById('product-name').value = productData.name;
-    document.getElementById('product-note').value = productData.notes;
-    document.getElementById('product-quantity').value = productData.stock;
-    document.getElementById('product-original-price').value = productData.originalPrice.replace('$', '');
-    document.getElementById('product-price').value = productData.salePrice.replace('$', '');
+    document.getElementById('order-id').value = orderData.id;
+    document.getElementById('order-name').value = orderData.name;
+    document.getElementById('order-note').value = orderData.notes;
+    document.getElementById('order-quantity').value = orderData.stock;
+    document.getElementById('order-original-price').value = orderData.total.replace('$', '');
+    document.getElementById('order-price').value = orderData.status.replace('$', '');
 
     // Show modal and overlay
     toggleModalVisibility(true);
@@ -755,14 +750,14 @@ function editProduct(productId, event) {
 
 // Toggle modal visibility
 function toggleModalVisibility(isVisible) {
-    const productForm = document.getElementById('productForm');
-    productForm.style.display = isVisible ? 'block' : 'none';
+    const orderForm = document.getElementById('orderForm');
+    orderForm.style.display = isVisible ? 'block' : 'none';
     document.getElementById('overlay').style.display = isVisible ? 'block' : 'none';
 
     // Cuộn đến form nếu nó đang được hiển thị
     if (isVisible) {
         setTimeout(() => {
-            productForm.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            orderForm.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }, 100); // Một chút độ trễ để đảm bảo modal được hiển thị hoàn toàn
     }
 }
@@ -775,39 +770,39 @@ function toggleModalVisibility(isVisible) {
           document.querySelector('.nav').classList.remove('form-navigation');
       }
   
-      // Update product data
-      function updateProduct(productId, productData) {
-          const productIndex = products.findIndex(product => product.id === productId);
-          if (productIndex > -1) {
-              products[productIndex] = { ...products[productIndex], ...productData };
+      // Update order data
+      function updateProduct(orderId, orderData) {
+          const orderIndex = orders.findIndex(order => order.id === orderId);
+          if (orderIndex > -1) {
+              orders[orderIndex] = { ...orders[orderIndex], ...orderData };
               renderProducts(currentPage);
           }
       }
 
 
-      function updateProductImage(productId, newImage) {
-    const productIndex = products.findIndex(product => product.id === productId);
-    if (productIndex > -1) {
-        products[productIndex].image = newImage; // Cập nhật đường dẫn hình ảnh mới
+      function updateProductImage(orderId, newImage) {
+    const orderIndex = orders.findIndex(order => order.id === orderId);
+    if (orderIndex > -1) {
+        orders[orderIndex].image = newImage; // Cập nhật đường dẫn hình ảnh mới
         renderProducts(currentPage); // Cập nhật lại bảng sản phẩm
     }
 }
 
   
       // Handle form submission
-      document.getElementById('save-product').addEventListener('submit', function (event) {
+      document.getElementById('save-order').addEventListener('submit', function (event) {
           event.preventDefault();
   
-          const productId = document.getElementById('product-id').value;
-          const productData = {
-              name: document.getElementById('product-name').value,
-              notes: document.getElementById('product-note').value,
-              stock: parseInt(document.getElementById('product-quantity').value, 10),
-              salePrice: `$${document.getElementById('product-price').value}`,
-              originalPrice: `$${document.getElementById('product-original-price').value}`
+          const orderId = document.getElementById('order-id').value;
+          const orderData = {
+              name: document.getElementById('order-name').value,
+              notes: document.getElementById('order-note').value,
+              stock: parseInt(document.getElementById('order-quantity').value, 10),
+              status: `$${document.getElementById('order-price').value}`,
+              total: `$${document.getElementById('order-original-price').value}`
           };
   
-          updateProduct(productId, productData);
+          updateProduct(orderId, orderData);
           closeModal();
       });
   
@@ -822,7 +817,7 @@ function toggleModalVisibility(isVisible) {
       });
       document.getElementById('apply-button').addEventListener('click', function() {
     const searchValue = document.getElementById('search-input').value.toLowerCase(); // Lấy giá trị tìm kiếm và chuyển thành chữ thường
-    const rows = document.querySelectorAll('#product-table-body tr'); // Lấy tất cả các hàng trong bảng
+    const rows = document.querySelectorAll('#order-table-body tr'); // Lấy tất cả các hàng trong bảng
 
     // Lưu trữ kết quả tìm kiếm
     const results = [];
@@ -845,40 +840,40 @@ function toggleModalVisibility(isVisible) {
     });
 
     // Xóa bảng hiện tại và in ra kết quả
-    const productTableBody = document.getElementById('product-table-body');
-    productTableBody.innerHTML = ''; // Xóa tất cả hàng cũ
+    const orderTableBody = document.getElementById('order-table-body');
+    orderTableBody.innerHTML = ''; // Xóa tất cả hàng cũ
 
     // Nếu có kết quả tìm kiếm, hiển thị chúng
     if (results.length > 0) {
         results.forEach(resultRow => {
-            productTableBody.appendChild(resultRow); // Thêm hàng khớp vào bảng
+            orderTableBody.appendChild(resultRow); // Thêm hàng khớp vào bảng
         });
     } else {
-        productTableBody.innerHTML = '<tr><td colspan="8">Không tìm thấy sản phẩm nào.</td></tr>'; // Hiển thị thông báo nếu không tìm thấy
+        orderTableBody.innerHTML = '<tr><td colspan="8">Không tìm thấy sản phẩm nào.</td></tr>'; // Hiển thị thông báo nếu không tìm thấy
     }
 });
 // Thêm sự kiện lắng nghe cho nút "Áp dụng"
 document.getElementById('apply-button').addEventListener('click', function() {
     const searchInput = document.getElementById('search-input').value.toLowerCase(); // Giá trị tìm kiếm
     const filterInput = document.getElementById('filter-input').value.toLowerCase(); // Giá trị lọc
-    const productTableBody = document.getElementById('product-table-body'); // Lấy bảng sản phẩm
+    const orderTableBody = document.getElementById('order-table-body'); // Lấy bảng sản phẩm
 
     // Lọc dữ liệu và hiển thị
-    productTableBody.innerHTML = ''; // Xóa nội dung cũ trong bảng
+    orderTableBody.innerHTML = ''; // Xóa nội dung cũ trong bảng
 
-    const filteredProducts = products.filter(product => {
-        const matchesSearch = product.name.toLowerCase().includes(searchInput); // Lọc theo tên
-        const matchesFilter = product.id.toLowerCase().includes(filterInput); // Lọc theo mã
+    const filteredProducts = orders.filter(order => {
+        const matchesSearch = order.name.toLowerCase().includes(searchInput); // Lọc theo tên
+        const matchesFilter = order.id.toLowerCase().includes(filterInput); // Lọc theo mã
         return matchesSearch && matchesFilter; // Trả về sản phẩm nếu khớp cả hai điều kiện
     });
 
-    filteredProducts.forEach(product => {
-        productTableBody.innerHTML += createProductRow(product); // Tạo hàng cho sản phẩm đã lọc
+    filteredProducts.forEach(order => {
+        orderTableBody.innerHTML += createProductRow(order); // Tạo hàng cho sản phẩm đã lọc
     });
 
     // Nếu không tìm thấy sản phẩm nào, bạn có thể hiển thị thông báo
     if (filteredProducts.length === 0) {
-        productTableBody.innerHTML = '<tr><td colspan="8">Không tìm thấy sản phẩm nào.</td></tr>';
+        orderTableBody.innerHTML = '<tr><td colspan="8">Không tìm thấy sản phẩm nào.</td></tr>';
     }
 });
 
@@ -901,7 +896,7 @@ document.getElementById('reset-button').addEventListener('click', function() {
   
     <script>
       function validateForm() {
-          const fileInput = document.getElementById('product-image');
+          const fileInput = document.getElementById('order-image');
           if (fileInput.files.length > 2) {
               alert('Bạn chỉ được chọn tối đa 2 hình ảnh.');
               return false;
