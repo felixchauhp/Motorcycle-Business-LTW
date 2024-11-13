@@ -974,7 +974,7 @@ table {
 
 /*=============== FOOTER ===============*/
 .footer__container {
-  grid-template-columns: 4.5fr repeat(2, 2fr) 3.5fr;
+  grid-template-columns: 2.5fr 4.5fr;
   padding-block: 2.5rem;
 }
 
