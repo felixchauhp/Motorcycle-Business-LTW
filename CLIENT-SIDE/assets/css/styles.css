@@ -6,11 +6,11 @@
   --header-height: 4rem;
 
   /*========== Colors ==========*/
-  --first-color: hsl(176, 88%, 27%);
+  --first-color: hsl(0, 0%, 0%);
   --first-color-alt: hsl(129, 44%, 94%);
   --second-color: hsl(34, 94%, 87%);
-  --title-color: hsl(176, 88%, 27%);
-  --text-color: hsl(176, 88%, 27%);
+  --title-color: hsl(0, 0%, 0%);
+  --text-color: hsl(150, 2%, 17%);
   --text-color-light: hsl(60, 1%, 56%);
   --body-color: hsl(0, 0%, 100%);
   --container-color: hsl(0, 0%, 93%);
@@ -754,7 +754,7 @@ table {
 }
 
 .deals__brand {
-  color: var(--first-color);
+  color: hsl(129, 36%, 85%);
   font-size: var(--h3-font-size);
   margin-bottom: 0.25rem;
 }
@@ -974,7 +974,7 @@ table {
 
 /*=============== FOOTER ===============*/
 .footer__container {
-  grid-template-columns: 2.5fr 4.5fr;
+  grid-template-columns: 4.5fr repeat(2, 2fr) 3.5fr;
   padding-block: 2.5rem;
 }
 
