@@ -24,9 +24,9 @@
     />
 
     <!--=============== CSS ===============-->
+    <link rel="stylesheet" href=".\assets\css\styles_new.css" />
+    <link rel="stylesheet" href=".\assets\css\style_index.css" />
     <link rel="stylesheet" href=".\assets\css\styles2.css" />
-    <link rel="stylesheet" href=".\assets\css\blog.css" />
-    <link rel="stylesheet" href=".\assets\css\stylessnow.css" />
 
-    <title>MotorCycle</title>
+    <title>MotorCycle Management System</title>
   </head>

@@ -102,7 +102,7 @@
         <div class="products__container grid">
           <div class="product__item">
             <div class="product__banner">
-              <a href="details.html" class="product__images">
+              <a href="details.php" class="product__images">
                 <img
                   src="assets/img/product-1-1.jpg"
                   alt=""
@@ -133,7 +133,7 @@
             </div>
             <div class="product__content">
               <span class="product__category">Phụ kiện khác</span>
-              <a href="details.html">
+              <a href="details.php">
                 <h3 class="product__title">Sản phẩm</h3>
               </a>
               <div class="product__rating">
@@ -158,7 +158,7 @@
           </div>
           <div class="product__item">
             <div class="product__banner">
-              <a href="details.html" class="product__images">
+              <a href="details.php" class="product__images">
                 <img
                   src="assets/img/product-2-1.jpg"
                   alt=""
@@ -189,7 +189,7 @@
             </div>
             <div class="product__content">
               <span class="product__category">Phụ kiện khác</span>
-              <a href="details.html">
+              <a href="details.php">
                 <h3 class="product__title">Sản phẩm</h3>
               </a>
               <div class="product__rating">
@@ -214,7 +214,7 @@
           </div>
           <div class="product__item">
             <div class="product__banner">
-              <a href="details.html" class="product__images">
+              <a href="details.php" class="product__images">
                 <img
                   src="assets/img/product-3-1.jpg"
                   alt=""
@@ -245,7 +245,7 @@
             </div>
             <div class="product__content">
               <span class="product__category">Phụ kiện khác</span>
-              <a href="details.html">
+              <a href="details.php">
                 <h3 class="product__title">Sản phẩm</h3>
               </a>
               <div class="product__rating">
@@ -270,7 +270,7 @@
           </div>
           <div class="product__item">
             <div class="product__banner">
-              <a href="details.html" class="product__images">
+              <a href="details.php" class="product__images">
                 <img
                   src="assets/img/product-4-1.jpg"
                   alt=""
@@ -301,7 +301,7 @@
             </div>
             <div class="product__content">
               <span class="product__category">Phụ kiện khác</span>
-              <a href="details.html">
+              <a href="details.php">
                 <h3 class="product__title">Sản phẩm</h3>
               </a>
               <div class="product__rating">
@@ -326,7 +326,7 @@
           </div>
           <div class="product__item">
             <div class="product__banner">
-              <a href="details.html" class="product__images">
+              <a href="details.php" class="product__images">
                 <img
                   src="assets/img/product-5-1.jpg"
                   alt=""
@@ -357,7 +357,7 @@
             </div>
             <div class="product__content">
               <span class="product__category">Phụ kiện khác</span>
-              <a href="details.html">
+              <a href="details.php">
                 <h3 class="product__title">Sản phẩm</h3>
               </a>
               <div class="product__rating">
@@ -382,7 +382,7 @@
           </div>
           <div class="product__item">
             <div class="product__banner">
-              <a href="details.html" class="product__images">
+              <a href="details.php" class="product__images">
                 <img
                   src="assets/img/product-6-1.jpg"
                   alt=""
@@ -413,7 +413,7 @@
             </div>
             <div class="product__content">
               <span class="product__category">Phụ kiện khác</span>
-              <a href="details.html">
+              <a href="details.php">
                 <h3 class="product__title">Sản phẩm</h3>
               </a>
               <div class="product__rating">
@@ -438,7 +438,7 @@
           </div>
           <div class="product__item">
             <div class="product__banner">
-              <a href="details.html" class="product__images">
+              <a href="details.php" class="product__images">
                 <img
                   src="assets/img/product-7-1.jpg"
                   alt=""
@@ -469,7 +469,7 @@
             </div>
             <div class="product__content">
               <span class="product__category">Phụ kiện khác</span>
-              <a href="details.html">
+              <a href="details.php">
                 <h3 class="product__title">Sản phẩm</h3>
               </a>
               <div class="product__rating">
@@ -494,7 +494,7 @@
           </div>
           <div class="product__item">
             <div class="product__banner">
-              <a href="details.html" class="product__images">
+              <a href="details.php" class="product__images">
                 <img
                   src="assets/img/product-8-1.jpg"
                   alt=""
@@ -524,7 +524,7 @@
             </div>
             <div class="product__content">
               <span class="product__category">Phụ kiện khác</span>
-              <a href="details.html">
+              <a href="details.php">
                 <h3 class="product__title">Sản phẩm</h3>
               </a>
               <div class="product__rating">
@@ -549,7 +549,7 @@
           </div>
           <div class="product__item">
             <div class="product__banner">
-              <a href="details.html" class="product__images">
+              <a href="details.php" class="product__images">
                 <img
                   src="assets/img/product-10-1.jpg"
                   alt=""
@@ -580,7 +580,7 @@
             </div>
             <div class="product__content">
               <span class="product__category">Phụ kiện khác</span>
-              <a href="details.html">
+              <a href="details.php">
                 <h3 class="product__title">Sản phẩm</h3>
               </a>
               <div class="product__rating">
@@ -605,7 +605,7 @@
           </div>
           <div class="product__item">
             <div class="product__banner">
-              <a href="details.html" class="product__images">
+              <a href="details.php" class="product__images">
                 <img
                   src="assets/img/product-11-1.jpg"
                   alt=""
@@ -636,7 +636,7 @@
             </div>
             <div class="product__content">
               <span class="product__category">Phụ kiện khác</span>
-              <a href="details.html">
+              <a href="details.php">
                 <h3 class="product__title">Sản phẩm</h3>
               </a>
               <div class="product__rating">
@@ -661,7 +661,7 @@
           </div>
           <div class="product__item">
             <div class="product__banner">
-              <a href="details.html" class="product__images">
+              <a href="details.php" class="product__images">
                 <img
                   src="assets/img/product-4-1.jpg"
                   alt=""
@@ -692,7 +692,7 @@
             </div>
             <div class="product__content">
               <span class="product__category">Phụ kiện khác</span>
-              <a href="details.html">
+              <a href="details.php">
                 <h3 class="product__title">Sản phẩm</h3>
               </a>
               <div class="product__rating">
@@ -717,7 +717,7 @@
           </div>
           <div class="product__item">
             <div class="product__banner">
-              <a href="details.html" class="product__images">
+              <a href="details.php" class="product__images">
                 <img
                   src="assets/img/product-12-1.jpg"
                   alt=""
@@ -747,7 +747,7 @@
             </div>
             <div class="product__content">
               <span class="product__category">Phụ kiện khác</span>
-              <a href="details.html">
+              <a href="details.php">
                 <h3 class="product__title">Sản phẩm</h3>
               </a>
               <div class="product__rating">
