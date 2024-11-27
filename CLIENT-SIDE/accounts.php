@@ -13,7 +13,7 @@
         <ul class="breadcrumb__list flex container">
           <li><a href="index.html" class="breadcrumb__link">Trang chủ</a></li>
           <li><span class="breadcrumb__link">></span></li>
-          <li><span class="breadcrumb__link">Về tôi</span></li>
+          <li><span class="breadcrumb__link">Cá nhân</span></li>
         </ul>
       </section>
 

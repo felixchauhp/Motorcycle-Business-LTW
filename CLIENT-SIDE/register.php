@@ -52,12 +52,9 @@
                 <button class="btn">Đăng ký</button>
               </div>
               <p>
-                <a href="login.html">Đã có tài khoản ? Đăng nhập ngay.</a>
+                <a href="login.php">Đã có tài khoản ? Đăng nhập ngay.</a>
               </p>
             </form>
-          </div>
-          <div class="register">
-            <img href="shop.php" src="assets/img/RIGHTBANNER.png" class="home__img" alt="hats" />
           </div>
         </div>
       </section>

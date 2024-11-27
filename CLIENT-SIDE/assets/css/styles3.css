@@ -1650,8 +1650,10 @@ table {
 
 /*=============== LOGIN & REGISTER ===============*/
 .login-register__container {
-  grid-template-columns: repeat(2, 1fr);
-  align-items: flex-start;
+  display: flex; /* Dùng flexbox để dễ căn giữa */
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  padding: 1rem; /* Tạo khoảng cách nhỏ ở hai bên màn hình */
 }
 .login__container {
   display: flex; /* Dùng flexbox để dễ căn giữa */
@@ -1671,13 +1673,14 @@ table {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tạo hiệu ứng nổi */
 }
 .register {
+  color: var(--first-color);
   border: 1px solid var(--border-color-alt);
   padding: 2rem;
   border-radius: 0.5rem;
-  -webkit-border-radius: 0.5rem;
-  -moz-border-radius: 0.5rem;
-  -ms-border-radius: 0.5rem;
-  -o-border-radius: 0.5rem;
+  width: 100%; /* Co giãn theo container */
+  max-width: 500px; /* Độ rộng tối đa là 400px */
+  background-color: #fff; /* Đảm bảo có nền để nhìn rõ */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tạo hiệu ứng nổi */
 }
 
 /*=============== ACCOUNTS ===============*/
