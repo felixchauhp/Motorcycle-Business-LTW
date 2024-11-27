@@ -4,6 +4,16 @@
   <body>
     <!--=============== HEADER ===============-->
     <?php include 'header.php' ?>
+<main class="main">
+    <!--=============== BREADCRUMB ===============-->
+    <section class="breadcrumb">
+        <ul class="breadcrumb__list flex container">
+          <li><a href="index.php" class="breadcrumb__link">Trang chủ</a></li>
+          <li><span class="breadcrumb__link">></span></li>
+          <li><span class="breadcrumb__link">Tin tức</span></li>
+        </ul>
+      </section>
+    <!--=============== BREADCRUMB ===============-->
 
     <div class="blog-container">
         <div class="row justify-content-center">
@@ -41,7 +51,7 @@
             </div>
         </div>
     </div>
-
+    </main>
     <!--=============== FOOTER ===============-->
     <?php include 'footer.php' ?>
 
