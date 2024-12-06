@@ -1,30 +1,3 @@
-<?php
-// Kết nối cơ sở dữ liệu
-include 'db_connection.php';
-
-// Lấy mã giảm giá từ URL
-if (isset($_GET['promoCode'])) {
-    $promo_code = urldecode($_GET['promoCode']);
-
-    // Truy vấn dữ liệu khuyến mãi
-    $query = "SELECT * FROM promotion WHERE PromoCode = ?";
-    if ($stmt = mysqli_prepare($conn, $query)) {
-        mysqli_stmt_bind_param($stmt, "s", $promo_code);
-        mysqli_stmt_execute($stmt);
-        $result = mysqli_stmt_get_result($stmt);
-        $promotion = mysqli_fetch_assoc($result);
-        mysqli_stmt_close($stmt);
-    }
-
-    // Nếu không tìm thấy mã giảm giá
-    if (!$promotion) {
-        die("Mã giảm giá không tồn tại!");
-    }
-} else {
-    die("Không tìm thấy mã giảm giá!");
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
  <!--=============== HEAD ===============-->
@@ -44,7 +17,7 @@ if (isset($_GET['promoCode'])) {
                     <input 
                         type="text" 
                         id="promo-name" 
-                        value="<?= htmlspecialchars($promotion['PromoName']); ?>" 
+                        value="Tên mã giảm giá" 
                         readonly
                     />
 
@@ -52,7 +25,7 @@ if (isset($_GET['promoCode'])) {
                     <input 
                         type="text" 
                         id="promo-code" 
-                        value="<?= htmlspecialchars($promotion['PromoCode']); ?>" 
+                        value="Mã giảm giá" 
                         readonly
                     />
 
@@ -62,7 +35,7 @@ if (isset($_GET['promoCode'])) {
                             <input 
                                 type="date" 
                                 id="promotion-start-date" 
-                                value="<?= htmlspecialchars($promotion['StartDate']); ?>" 
+                                value="2024-01-01" 
                                 readonly
                             />
                         </div>
@@ -71,7 +44,7 @@ if (isset($_GET['promoCode'])) {
                             <input 
                                 type="date" 
                                 id="promotion-end-date" 
-                                value="<?= htmlspecialchars($promotion['EndDate']); ?>" 
+                                value="2024-12-31" 
                                 readonly
                             />
                         </div>
@@ -82,7 +55,7 @@ if (isset($_GET['promoCode'])) {
                         <input 
                             type="number" 
                             id="percent-discount" 
-                            value="<?= htmlspecialchars($promotion['PromoRate']); ?>" 
+                            value="10" 
                             readonly
                         />
                     </div>
@@ -91,7 +64,7 @@ if (isset($_GET['promoCode'])) {
                     <input 
                         type="number" 
                         id="min-order" 
-                        value="<?= htmlspecialchars($promotion['MinValue']); ?>" 
+                        value="50000" 
                         readonly
                     />
 
@@ -99,7 +72,7 @@ if (isset($_GET['promoCode'])) {
                     <input 
                         type="number" 
                         id="max-discount" 
-                        value="<?= htmlspecialchars($promotion['MaxAmount']); ?>" 
+                        value="100000" 
                         readonly
                     />
 
@@ -107,7 +80,7 @@ if (isset($_GET['promoCode'])) {
                     <input 
                         type="number" 
                         id="quantity" 
-                        value="<?= htmlspecialchars($promotion['Quantity']); ?>" 
+                        value="100" 
                         readonly
                     />
 
@@ -125,7 +98,7 @@ if (isset($_GET['promoCode'])) {
                     <button 
                         type="button" 
                         class="btn flex btn__md" 
-                        onclick="window.location.href='update-Discount.php?promoCode=<?= urlencode($promotion['PromoCode']); ?>'">
+                        onclick="window.location.href='edit-discount.php?promoCode=promoCodeExample'">
                         Chỉnh sửa
                     </button>
                 </div>
