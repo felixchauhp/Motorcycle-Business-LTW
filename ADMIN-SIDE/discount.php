@@ -48,9 +48,6 @@
                             <a href="edit-discount.php">
                                 <i class="fi fi-rs-edit table__trash"></i>
                             </a>
-                            <a href="show-discount.php">
-                                <i class="fi fi-rs-menu-dots table__trash"></i>
-                            </a>
                             <a href="#" class="delete-btn">
                                 <i class="fi fi-rs-trash table__trash"></i>
                             </a>

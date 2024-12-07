@@ -41,6 +41,9 @@
           <li class="nav__item">
             <a href="rating.php" class="nav__link active-link">Đánh giá</a>
           </li>
+          <li class="nav__item">
+            <a href="blog.php" class="nav__link active-link">Bài viết</a>
+          </li>
         </ul>
       </div>
 

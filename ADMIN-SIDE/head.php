@@ -32,6 +32,8 @@
     <link rel="stylesheet" href=".\assets\css\order1.css" />
     <link rel="stylesheet" href=".\assets\css\index1.css" />
     <link rel="stylesheet" href=".\assets\css\styles22.css" />
+    <link rel="stylesheet" href=".\assets\css\blog_new.css" />
+
 
     <title>MotorCycle Management System</title>
   </head>

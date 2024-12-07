@@ -53,10 +53,7 @@
                     <td>01/10/2023</td>
                     <td>
                         <a href="#">
-                          <i class="fi fi-rs-reply-all table__trash"></i>
-                        </a>
-                        <a href="#">
-                          <i class="fi fi-rs-menu-dots table__trash"></i>
+                          <i class="fi fi-rs-eye table__trash"></i>
                         </a>
                         <a href="#">
                           <i class="fi fi-rs-trash table__trash"></i>

@@ -62,7 +62,7 @@
                             
                             <!-- Nút xem chi tiết -->
                             <a href="../CLIENT-SIDE/details.php">
-                                <i class="fi fi-rs-menu-dots go-to-icon"></i>
+                                <i class="fi fi-rs-eye table__trash"></i>
                             </a>
                         
                             <!-- Nút xóa -->
