@@ -60,13 +60,8 @@
               </div>
             </div>
 
-            <label for="product-image-link">Link ảnh sản phẩm:</label>
-            <textarea
-              id="product-image-link"
-              name="product-image-link"
-              placeholder="Nhập một hoặc nhiều link ảnh, cách nhau bởi dấu phẩy"
-              required
-            ></textarea>
+            <label for="product-image">Product image:</label>
+            <input type="file" id="product-image" accept="image/*" required />
 
             <label for="product-note">Ghi chú:</label>
             <textarea id="product-note" name="product-note" required></textarea>
