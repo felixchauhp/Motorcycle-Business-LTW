@@ -14,7 +14,7 @@
             </a>
             <form method="GET" action="products.php" class="right-actions">
                 <input type="text" id="search-input" name="search" placeholder="Tìm kiếm..." />
-                <select id="filter-input" name="filter" style="font-family: inherit; font-size: inherit;">
+                <!-- <select id="filter-input" name="filter" style="font-family: inherit; font-size: inherit;">
                     <option value="" selected>Tất cả trạng thái</option>
                     <option value="Ắc quy">Ắc quy</option>
                     <option value="Bạc đạn">Bạc đạn</option>   
@@ -23,9 +23,9 @@
                     <option value="Nhớt">Nhớt</option>
                     <option value="Vỏ xe và ruột xe">Vỏ xe và ruột xe</option>
                     <option value="Các phụ kiện khác">Các phụ kiện khác</option>
-                </select>
-                <button type="submit" class="btn flex btn__md" style="cursor: pointer; ">Áp dụng</button>
-                <a href="products.php" class="btn flex btn__md" style="cursor: pointer;  ">Nhập lại</a>
+                </select> -->
+                <!-- <button type="submit" class="btn flex btn__md" style="cursor: pointer; ">Áp dụng</button>
+                <a href="products.php" class="btn flex btn__md" style="cursor: pointer;  ">Nhập lại</a> -->
             </form>
         </div>
 
@@ -35,11 +35,11 @@
                         <th>Ảnh</th>
                         <th>Mã</th>
                         <th>Tên</th>
-                        <th>Danh mục</th>
-                        <th>Tồn kho</th>
+                        <!-- <th>Danh mục</th> -->
                         <th>Giá gốc (VND)</th>
+                        <th>Giá giảm (VND)</th>
                         <th>Giá bán (VND)</th>
-                        <th>Ghi chú</th>
+                        <th>Điểm đánh giá</th>
                         <th>Thao tác</th>
                     </tr>
                 </thead>

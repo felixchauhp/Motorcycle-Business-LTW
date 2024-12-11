@@ -2,6 +2,7 @@
 <html lang="en">
   <!--=============== DOCUMENT HEAD ===============-->
   <?php include 'head.php'; ?>
+  
 
 <body>
    <!--=============== HEADER ===============-->
@@ -38,6 +39,27 @@
             </p>
             <p class="account__tab"><i class="fi fi-rs-exit"></i> Đăng xuất</p>
           </div>
+
+          <!-- Thêm ảnh đại diện -->
+          <div class="post-image-wrapper">
+              <input 
+                type="file" 
+                id="post-image" 
+                name="image" 
+                class="form-control" 
+                accept="image/*" 
+                onchange="previewImage(event)"
+              >
+              <div class="image-preview-wrapper">
+                <img 
+                  id="image-preview" 
+                  src="#" 
+                  alt="Hình ảnh bài viết" 
+                  class="post-image mt-2"
+                  style="display: none;"
+                >
+              </div> 
+
           <div class="tabs__content">
             <div class="tab__content active-tab" content id="dashboard">
               <h3 class="tab__header">Xin chào User</h3>
@@ -154,6 +176,11 @@
               </div>
             </div>
           </div>
+        </div>
+        <!-- Nút thao tác -->
+        <div style="display: flex; justify-content: space-between; margin-top: 20px;">
+            <button type="submit" class="btn flex btn__md">Lưu thay đổi</button>
+            <button type="button" class="btn flex btn__md">Hủy</button>
         </div>
       </section>
     </main>

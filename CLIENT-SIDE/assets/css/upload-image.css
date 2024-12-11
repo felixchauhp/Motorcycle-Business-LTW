@@ -1,0 +1,14 @@
+.post-image-wrapper {
+  text-align: center; /* Canh giữa nếu cần */
+}
+
+.image-preview-wrapper {
+  margin-top: 4px;
+}
+
+.post-image {
+  max-width: 50px; /* Giới hạn chiều rộng tối đa là 10% */
+  height: auto; /* Chiều cao tự động để giữ tỷ lệ */
+  display: none; /* Ẩn ảnh trước khi tải lên */
+}
+

@@ -19,7 +19,7 @@
 
             <label for="product-name">Tên sản phẩm:</label>
             <input type="text" id="product-name" name="product-name" value="" required />
-
+<!-- 
             <label for="product-supplier">Nhà cung cấp:</label>
             <input type="text" id="product-supplier" name="product-supplier" value="" required />
 
@@ -33,9 +33,9 @@
               <option value="Nhớt">Nhớt</option>
               <option value="Vỏ xe và ruột xe">Vỏ xe và ruột xe</option>
               <option value="Các phụ kiện khác">Các phụ kiện khác</option>
-            </select>
+            </select> -->
 
-            <label for="product-info">Mô tả:</label>
+            <!-- <label for="product-info">Mô tả:</label>
             <textarea id="product-info" name="product-info" required></textarea>
 
             <label for="product-function">Công dụng:</label>
@@ -45,7 +45,7 @@
             <input type="number" id="product-quantity" name="product-quantity" value="0" required />
 
             <label for="product-unit">Đơn vị tính:</label>
-            <input type="text" id="product-unit" name="product-unit" value="" required />
+            <input type="text" id="product-unit" name="product-unit" value="" required /> -->
 
             <div id="product-prices">
               <div>
@@ -56,13 +56,20 @@
                 <label for="product-price">Giá bán:</label>
                 <input type="number" id="product-price" name="product-price" value="0" required />
               </div>
+              <div>
+                <label for="product-price">Giá giảm:</label>
+                <input type="number" id="product-price" name="product-price" required />
+              </div>
             </div>
+
+            <label for="product-rate">Điểm đánh giá:</label>
+            <textarea id="product-rate" name="product-rate" required></textarea>
 
             <label for="product-image-link">Link ảnh sản phẩm:</label>
             <textarea id="product-image-link" name="product-image-link" required></textarea>
 
-            <label for="product-note">Ghi chú:</label>
-            <textarea id="product-note" name="product-note"></textarea>
+            <!-- <label for="product-note">Ghi chú:</label>
+            <textarea id="product-note" name="product-note"></textarea> -->
 
             <br>
             <button type="submit">Cập nhật</button>

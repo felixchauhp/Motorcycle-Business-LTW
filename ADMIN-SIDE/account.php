@@ -28,6 +28,25 @@
                 </p>
               </div>
             </div>
+             <!-- Thêm ảnh đại diện -->
+             <div class="post-image-wrapper">
+              <input 
+                type="file" 
+                id="post-image" 
+                name="image" 
+                class="form-control" 
+                accept="image/*" 
+                onchange="previewImage(event)"
+              >
+              <div class="image-preview-wrapper">
+                <img 
+                  id="image-preview" 
+                  src="#" 
+                  alt="Hình ảnh bài viết" 
+                  class="post-image mt-2"
+                  style="display: none;"
+                >
+              </div> 
             <div class="tab__content" content id="update-profile">
               <h3 class="tab__header">Cập nhật hồ sơ</h3>
               <div class="tab__body">
@@ -45,7 +64,7 @@
                 </form>
               </div>
             </div>
-            <div class="tab__content" content id="address">
+          <div class="tab__content" content id="address">
               <h3 class="tab__header">Thông tin cá nhân</h3>
               <div class="tab__body">
                 <ul class="personal-info">
@@ -61,6 +80,7 @@
                   <li><strong>Mức Lương:</strong> [Mức lương]</li>
                 </ul>
               </div>
+
             </div>
             <div class="tab__content" content id="change-password">
               <h3 class="tab__header">Đổi mật khẩu</h3>
@@ -95,6 +115,11 @@
             </div>
           </div>
         </div>
+        <!-- Nút thao tác -->
+             <div style="display: flex; justify-content: space-between; margin-top: 20px;">
+                <button type="submit" class="btn flex btn__md">Lưu thay đổi</button>
+                <button type="button" class="btn flex btn__md">Hủy</button>
+            </div>
       </section>
     </main>
 

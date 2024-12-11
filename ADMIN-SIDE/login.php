@@ -59,6 +59,7 @@
           </form>
         </div>
       </div>
+      <h1 class="section__title">CHÀO MỪNG BẠN ĐẾN VỚI MOTOR CYCLE!</h1>
     </section>
   </main>
 

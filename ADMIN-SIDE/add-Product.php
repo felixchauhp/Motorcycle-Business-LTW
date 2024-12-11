@@ -22,10 +22,10 @@
             <label for="product-name">Tên sản phẩm:</label>
             <input type="text" id="product-name" name="product-name" required />
 
-            <label for="product-supplier">Nhà cung cấp:</label>
-            <input type="text" id="product-supplier" name="product-supplier" required />
+            <!-- <label for="product-supplier">Nhà cung cấp:</label>
+            <input type="text" id="product-supplier" name="product-supplier" required /> -->
 
-            <label for="product-category">Danh mục:</label>
+            <!-- <label for="product-category">Danh mục:</label>
             <select id="filter-input" name="product-category" required>
               <option value="" disabled selected>Chọn</option>
               <option value="vo-xe-ruot-xe">Vỏ xe và ruột xe</option>
@@ -35,9 +35,9 @@
               <option value="ac-quy">Ắc quy</option>
               <option value="bo-dia-bo-thang">Bố đĩa và bố thắng</option>
               <option value="phu-kien-khac">Các phụ kiện khác</option>
-            </select>
+            </select> -->
 
-            <label for="product-info">Mô tả:</label>
+            <!-- <label for="product-info">Mô tả:</label>
             <textarea id="product-info" name="product-info" required></textarea>
 
             <label for="product-function">Công dụng:</label>
@@ -47,7 +47,7 @@
             <input type="number" id="product-quantity" name="product-quantity" required />
 
             <label for="product-unit">Đơn vị tính:</label>
-            <input type="text" id="product-unit" name="product-unit" required />
+            <input type="text" id="product-unit" name="product-unit" required /> -->
 
             <div id="product-prices">
               <div>
@@ -58,13 +58,20 @@
                 <label for="product-price">Giá bán:</label>
                 <input type="number" id="product-price" name="product-price" required />
               </div>
+              <div>
+                <label for="product-price">Giá giảm:</label>
+                <input type="number" id="product-price" name="product-price" required />
+              </div>
             </div>
 
+            <label for="product-rate">Điểm đánh giá:</label>
+            <textarea id="product-rate" name="product-rate" required></textarea>
+            
             <label for="product-image">Product image:</label>
             <input type="file" id="product-image" accept="image/*" required />
 
-            <label for="product-note">Ghi chú:</label>
-            <textarea id="product-note" name="product-note" required></textarea>
+            <!-- <label for="product-note">Ghi chú:</label>
+            <textarea id="product-note" name="product-note" required></textarea> -->
 
             <br />
             <button type="submit">Thêm</button>
