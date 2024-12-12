@@ -115,11 +115,6 @@
             </div>
           </div>
         </div>
-        <!-- Nút thao tác -->
-             <div style="display: flex; justify-content: space-between; margin-top: 20px;">
-                <button type="submit" class="btn flex btn__md">Lưu thay đổi</button>
-                <button type="button" class="btn flex btn__md">Hủy</button>
-            </div>
       </section>
     </main>
 
