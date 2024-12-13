@@ -1,0 +1,85 @@
+/* Wrapper cho notification dropdown */
+.notification-wrapper {
+    position: relative;
+  }
+  
+  /* Nút thông báo */
+  .notification-btn {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .notification-count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 2px 6px;
+  }
+  
+  /* Dropdown menu */
+  .notification-dropdown {
+    display: none; /* Ẩn mặc định */
+    position: absolute;
+    top: 120%; /* Khoảng cách từ nút bell */
+    right: 0;
+    width: 320px; /* Kích thước lớn */
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 0.9rem;
+  }
+  
+  /* Tiêu đề dropdown */
+  .notification-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* Danh sách thông báo */
+  .notification-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .notification-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    color: #555;
+    cursor: pointer;
+  }
+  
+  .notification-item:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Link "Xem tất cả thông báo" */
+  .notification-view-all {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .notification-view-all:hover {
+    text-decoration: underline;
+  }
+  
+  /* Hiển thị dropdown khi có class "active" */
+  .notification-dropdown.active {
+    display: block;
+  }
+  

@@ -65,7 +65,7 @@
         </div>
       </div>
       <div class="footer__bottom">
-      <p class="copyright">&copy; 2024. WEB-ASSIGNMENT GROUP All right reserved</p>
-      <span class="designer">Website created by WEB-ASSIGNMENT GROUP</span>
-    </div>
+        <p class="copyright">&copy; 2024. LTWF88 all right reserved</p>
+        <span class="designer">Website created by LTWF88.</span>
+      </div>
     </footer>

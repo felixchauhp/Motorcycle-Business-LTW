@@ -11,10 +11,10 @@
       <div class="col-md-10">
         <div class="post-detail">
           <!-- Blog Post Header -->
-          <h1 class="post-title">Awesome Blog Post Title</h1>
+          <h1 class="post-title">Mẫu xe MPV Zeekr 009 "nhăm nhe" về Việt Nam "bán chạy như tôm tươi"</h1>
           <div class="post-meta">
-            <span class="post-author">By <a href="#">Mike Mikers</a></span>
-            <span class="post-date">Published on: 3/6/2016</span>
+            <span class="post-author">By <?php echo $_SESSION["username"] ?></span>
+            <span class="post-date">Published on: 3/10/2014</span>
           </div>
 
           <!-- Blog Post Image -->
@@ -25,23 +25,13 @@
           <!-- Blog Post Content -->
           <div class="post-content">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet.
+              Zeekr chính thức công bố doanh số bán ra của mẫu xe MPV chạy hoàn toàn bằng điện Zeekr 009 đã đạt 4.201 xe vào tháng 11. Đây là mức doanh số kỷ lục mới cho mẫu xe MPV chủ lực của thương hiệu này.
             </p>
             <p>
-              Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor varius in. Proin in pellentesque velit, ac vulputate turpis.
+              Công ty cũng tuyên bố rằng vào tháng 11, doanh số bán hàng của Zeekr 009 đã giành danh hiệu xe điện thuần túy bán chạy nhất có giá trên 400.000 nhân dân tệ (55.000 USD) và xe MPV bán chạy nhất có giá trên 400.000 nhân dân tệ (55.000 USD).
             </p>
-            <h2>Subheading Example</h2>
-            <p>
-              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed at sem sodales, tincidunt velit nec, dignissim lectus. Curabitur sit amet leo nisi.
-            </p>
-            <blockquote>
-              <p>
-                "This is an example of a blockquote. It can be used to highlight important text or quotes from the article."
-              </p>
-            </blockquote>
-            <p>
-              Maecenas vel elit at dui condimentum lobortis. Suspendisse in eros eu mauris feugiat tincidunt at in nulla. Integer vel bibendum quam, ut mollis metus.
-            </p>
+
+
           </div>
 
           <!-- Related Posts Section -->
@@ -67,4 +57,5 @@
   <!--=============== MAIN JS ===============-->
   <script src="assets/js/main.js"></script>
 </body>
+
 </html>
