@@ -29,7 +29,7 @@
       </div>
     </div>
     <div class="footer__bottom">
-      <p class="copyright">&copy; 2024. All right reserved</p>
-      <span class="designer">Website created by Group 4</span>
+    <p class="copyright">&copy; 2024. LTWF88 all right reserved</p>
+    <span class="designer">Website created by LTWF88.</span>
     </div>
   </footer>
