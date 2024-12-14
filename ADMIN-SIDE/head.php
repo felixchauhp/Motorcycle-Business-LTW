@@ -27,14 +27,12 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
 
-    <!--=============== CSS ===============-->    
-    <link rel="stylesheet" href=".\assets\css\styles1.css" />
-    <link rel="stylesheet" href=".\assets\css\order1.css" />
-    <link rel="stylesheet" href=".\assets\css\index1.css" />
-    <link rel="stylesheet" href=".\assets\css\styles22.css" />
-    <link rel="stylesheet" href=".\assets\css\blog_new.css" />
-    <link rel="stylesheet" href=".\assets\css\xxx.css" />
-
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href=".\assets\css\styles.css" />
+    <link rel="stylesheet" href=".\assets\css\stylessnow.css" />
+    <link rel="stylesheet" href=".\assets\css\order.css" />
+    <link rel="stylesheet" href=".\assets\css\index.css" />
+    <link rel="stylesheet" href=".\assets\css\styles2.css" />
 
     <title>MotorCycle Management System</title>
   </head>

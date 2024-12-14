@@ -1,7 +1,7 @@
 <footer class="footer container">
 <div class="footer__container grid">
       <div class="footer__content">
-        <a href="index-manage.php" class="footer__logo">
+        <a href="index.php" class="footer__logo">
           <img src="./assets/img/logo.png" alt="" class="footer__logo-img" />
         </a>    
         <div class="footer__social">
@@ -29,7 +29,7 @@
       </div>
     </div>
     <div class="footer__bottom">
-      <p class="copyright">&copy; 2024. WEB-ASSIGNMENT GROUP All right reserved</p>
-      <span class="designer">Website created by WEB-ASSIGNMENT GROUP</span>
+      <p class="copyright">&copy; 2024. All right reserved</p>
+      <span class="designer">Website created by Group 4</span>
     </div>
   </footer>

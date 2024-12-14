@@ -1,6 +1,4 @@
 <?php
-session_start();
-include 'checklogin.php';
 include 'db_connection.php';
 ?>
 <!DOCTYPE html>
@@ -12,11 +10,10 @@ include 'db_connection.php';
   <?php include 'header.php'; ?>
     <!--=============== ORDER ===============-->   
     <main class="main">
-        <section class="products section--lg container">
+        <section class="wishlist section--lg container">
         <div class="search-container">
-        <form method="GET" action="orders.php" class="right-actions">
-        <input type="text" id="search-input" name="search" placeholder="Tìm kiếm..." value="<?= htmlspecialchars($search) ?>" style="margin-right: auto;" />
-
+        <form method="GET" action="quanlydonhang.php" class="right-actions">
+          <input type="text" id="search-input" name="search" placeholder="Tìm kiếm..." value="<?= htmlspecialchars($search) ?>" />
           <!-- Lọc trạng thái -->
     <select id="status-filter" name="status" style="font-family: inherit; font-size: inherit;">
         <option value="" <?= !isset($_GET['status']) ? 'selected' : '' ?>>Tất cả trạng thái</option>
@@ -33,10 +30,13 @@ include 'db_connection.php';
         <option value="Thất bại" <?= isset($_GET['payment']) && $_GET['payment'] === 'Thất bại' ? 'selected' : '' ?>>Thất bại</option>
         <option value="Đang chờ" <?= isset($_GET['payment']) && $_GET['payment'] === 'Đang chờ' ? 'selected' : '' ?>>Đang chờ</option>
     </select>
-          <input type="date" id="start-date" name="start_date" value="<?= htmlspecialchars($startDate) ?>">
-          <input type="date" id="end-date" name="end_date" value="<?= htmlspecialchars($endDate) ?>">
-          <button type="submit" class="btn flex btn__md" style="cursor: pointer;">Áp dụng</button>
-          <a href="orders.php" class="btn flex btn__md" style="cursor: pointer;">Nhập lại</a>
+          <input type="date" id="start-date" name="start_date" value="<?= htmlspecialchars($startDate) ?>"
+            style="padding: 8px; border: 1px solid #ccc; border-radius: 4px; width: 180px; box-sizing: border-box; margin-left: 10px; margin-right: 10px;">
+          <input type="date" id="end-date" name="end_date" value="<?= htmlspecialchars($endDate) ?>"
+            style="padding: 8px; border: 1px solid #ccc; border-radius: 4px; width: 180px; box-sizing: border-box; margin-left: 10px; margin-right: 10px;">
+          
+          <button type="submit" class="btn flex btn__md" style="cursor: pointer; width: 155px; ">Áp dụng</button>
+          <a href="quanlydonhang.php" class="btn flex btn__md" style="cursor: pointer; width: 150px; ">Nhập lại</a>
         </form>
       </div>
               <table class="product-table">
@@ -44,7 +44,7 @@ include 'db_connection.php';
                   <tr>
                     <th>Mã đơn hàng</th>
                     <th>Mã khách hàng</th>
-                    <th>Thành tiền (VND)</th>
+                    <th>Thành tiền</th>
                     <th>Ngày tạo đơn</th>
                     <th>Trạng thái</th>
                     <th>Thanh toán</th>
@@ -68,7 +68,7 @@ include 'db_connection.php';
                               <?= htmlspecialchars($order['CustomerID']) ?>
                   </td>
                     <td>
-                            <?= number_format($order['TotalDue'], 0, ',', '.'); ?>
+                              <?= htmlspecialchars($order['TotalDue']) ?>
                     </td>
                     <td>
                               <?= htmlspecialchars($order['OrderDate']) ?>
@@ -125,7 +125,7 @@ include 'db_connection.php';
     });
 
     // Cơ sở URL phân trang (có các tham số lọc)
-    $baseUrl = 'orders.php?' . http_build_query($queryParams);
+    $baseUrl = 'quanlydonhang.php?' . http_build_query($queryParams);
     ?>
 
 
@@ -202,7 +202,5 @@ include 'db_connection.php';
   </main>
   <!--=============== FOOTER ===============-->
   <?php include 'footer.php'; ?>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="assets/js/main.js"></script>
 </body>
 </html>
